@@ -15,13 +15,15 @@
     <button class="button">Получить консультацию</button>
   </div>
   </div>
-  <WhyChooseUs />
+
 </div>
+
 </template>
 
 <script>
 import WhyChooseUs from './WhyChooseUs.vue';
 export default {
+  
   name: 'GetConsult',
   components: {
     WhyChooseUs

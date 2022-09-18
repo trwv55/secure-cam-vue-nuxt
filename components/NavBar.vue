@@ -1,5 +1,6 @@
 <template>
-  <div class="header header-container">
+<header class="header">
+  <div class="header-container">
     <div class="header-left">
     <a href="">
       <img
@@ -11,6 +12,7 @@
     </div>
     <div class="header-right"><a href="tel:8(8888)888-000">8(8888)888-000</a></div>
   </div>
+  </header>
 </template>
 
 <script>
