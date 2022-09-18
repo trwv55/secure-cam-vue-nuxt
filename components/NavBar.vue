@@ -1,6 +1,6 @@
 <template>
 <header class="header">
-  <div class="header-container">
+  <div class="header-container container">
     <div class="header-left">
     <a href="">
       <img

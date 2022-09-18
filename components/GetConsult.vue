@@ -14,24 +14,29 @@
     </div>
     <button class="button">Получить консультацию</button>
   </div>
+  <WhyChooseUs/>
+  <MakeSave />
   </div>
 
-</div>
+ </div>
+
 
 </template>
 
 <script>
 import WhyChooseUs from './WhyChooseUs.vue';
+import MakeSave from './MakeSave.vue';
 export default {
   
   name: 'GetConsult',
   components: {
-    WhyChooseUs
+    WhyChooseUs, MakeSave
   } 
 };
 </script>
 
 <style lang="scss" scoped>
+.main {
 .overlay {
   position: absolute;
   left: 0;
@@ -88,6 +93,7 @@ export default {
       margin-top: 55px;
     }
   }
+}
 }
 
 </style>
