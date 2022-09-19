@@ -16,6 +16,10 @@
   </div>
   <WhyChooseUs/>
   <MakeSave />
+  <Goods />
+  <Clients />
+  <Calculate />
+  <Control />
   </div>
 
  </div>
@@ -26,11 +30,15 @@
 <script>
 import WhyChooseUs from './WhyChooseUs.vue';
 import MakeSave from './MakeSave.vue';
+import Goods from './Goods.vue';
+import Clients from './Clients.vue';
+import Calculate from './calculate/Calculate.vue';
+import Control from './Control.vue';
+
 export default {
-  
   name: 'GetConsult',
   components: {
-    WhyChooseUs, MakeSave
+    WhyChooseUs, MakeSave, Goods, Clients, Calculate, Control
   } 
 };
 </script>

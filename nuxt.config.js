@@ -35,4 +35,10 @@ export default {
   styleResources: {
     scss: ["~/static/scss/variables.scss", "~/static/scss/mixins.scss"],
   },
+
+  babel: {
+    presets(env, [preset, options]) {
+      return [["@nuxt/babel-preset-app", options]];
+    },
+  },
 };
