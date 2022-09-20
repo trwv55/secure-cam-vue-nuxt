@@ -17,48 +17,20 @@
         </div>
         <button class="button">Получить консультацию</button>
       </div>
-      <WhyChooseUs />
-      <MakeSave />
-      <Goods />
-      <Clients />
-      <Calculate />
-      <Control />
-      <VideoReg />
-      <FindUs />
-      <Footer />
     </div>
   </div>
 </template>
 
 <script>
-import WhyChooseUs from "./WhyChooseUs.vue";
-import MakeSave from "./MakeSave.vue";
-import Goods from "./Goods.vue";
-import Clients from "./Clients.vue";
-import Calculate from "./calculate/Calculate.vue";
-import Control from "./Control.vue";
-import VideoReg from "./VideoReg.vue";
-import FindUs from "./FindUs.vue";
-import Footer from "./Footer.vue";
-
 export default {
   name: "GetConsult",
-  components: {
-    WhyChooseUs,
-    MakeSave,
-    Goods,
-    Clients,
-    Calculate,
-    Control,
-    VideoReg,
-    FindUs,
-    Footer,
-  },
+  components: {},
 };
 </script>
 
 <style lang="scss" scoped>
 .main {
+  margin-bottom: 815px;
   .overlay {
     position: absolute;
     left: 0;

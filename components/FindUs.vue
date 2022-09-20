@@ -38,7 +38,7 @@
 
 <script>
 export default {
-  name: "Findus",
+  name: "FindUs",
 };
 </script>
 

@@ -43,7 +43,7 @@ export default {
 .footer {
   margin-top: 85px;
   background-color: #202427;
-  padding-bottom: 180px;
+  padding-bottom: 99px;
   .row-wrapper {
     display: flex;
     flex-direction: row;

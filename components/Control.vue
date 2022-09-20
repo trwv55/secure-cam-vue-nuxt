@@ -25,9 +25,6 @@ import VideoReg from "./VideoReg.vue";
 
 export default {
   name: "Control",
-  // components: {
-  //   VideoReg,
-  // },
 };
 </script>
 
