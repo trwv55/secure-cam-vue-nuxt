@@ -3,7 +3,7 @@
     <div class="overlay">
       <div class="container consult">
         <div class="links">
-          <NuxtLink to="/b2c">Для меня</NuxtLink>
+          <NuxtLink to="/b2c" class="nuxt-link-active">Для меня</NuxtLink>
           <NuxtLink to="/" id="active">Для бизнеса</NuxtLink>
         </div>
         <div class="title">

@@ -1,12 +1,14 @@
 <template>
-  <div class="videoReg">
-    <div class="container">
-      <h3>Видеорегистраторы</h3>
-      <div class="blocks">
-        <img src="../static/images/videoReg/chebcamera.png" alt="" />
-        <img src="../static/images/videoReg/chebcamera.png" alt="" />
-        <img src="../static/images/videoReg/chebcamera.png" alt="" />
-        <img src="../static/images/videoReg/chebcamera.png" alt="" />
+  <div v-bind:class="{ video: $route.path == '/' }">
+    <div class="videoReg">
+      <div class="container">
+        <h3>Видеорегистраторы</h3>
+        <div class="blocks">
+          <img src="../static/images/videoReg/chebcamera.png" alt="" />
+          <img src="../static/images/videoReg/chebcamera.png" alt="" />
+          <img src="../static/images/videoReg/chebcamera.png" alt="" />
+          <img src="../static/images/videoReg/chebcamera.png" alt="" />
+        </div>
       </div>
     </div>
   </div>
@@ -19,8 +21,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.videoReg {
+.video {
   margin-top: 520px;
+}
+.videoReg {
   margin-bottom: 120px;
   h3 {
     font-weight: 500;

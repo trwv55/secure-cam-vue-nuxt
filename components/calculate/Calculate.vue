@@ -1,41 +1,43 @@
 <template>
-  <div class="calculate">
-    <div class="container">
-      <h3>Рассчитайте стоимость видеонаблюдения</h3>
-      <p>
-        Никаких тарифов и абонентских плат - платите один раз и пользуйтесь
-        камерой.
-      </p>
-      <div class="form-wrapper">
-        <div class="checkbox-form">
-          <div class="checkbox-wrapper">
-            <div class="form-check checkbox">
-              <input
-                class="form-check-input input"
-                type="checkbox"
-                value=""
-                id="flexCheckDefault"
-              />
-              <label class="form-check-label label" for="flexCheckDefault">
-                Монтаж
-              </label>
+  <div v-bind:class="{ customer: $route.path == '/b2c' }">
+    <div class="calculate">
+      <div class="container">
+        <h3>Рассчитайте стоимость видеонаблюдения</h3>
+        <p>
+          Никаких тарифов и абонентских плат - платите один раз и пользуйтесь
+          камерой.
+        </p>
+        <div class="form-wrapper">
+          <div class="checkbox-form">
+            <div class="checkbox-wrapper">
+              <div class="form-check checkbox">
+                <input
+                  class="form-check-input input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label label" for="flexCheckDefault">
+                  Монтаж
+                </label>
+              </div>
+              <div class="form-check checkbox">
+                <input
+                  class="form-check-input input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  checked
+                />
+                <label class="form-check-label label" for="flexCheckChecked">
+                  Full HD камера
+                </label>
+              </div>
             </div>
-            <div class="form-check checkbox">
-              <input
-                class="form-check-input input"
-                type="checkbox"
-                value=""
-                id="flexCheckChecked"
-                checked
-              />
-              <label class="form-check-label label" for="flexCheckChecked">
-                Full HD камера
-              </label>
-            </div>
+            <Form />
           </div>
-          <Form />
+          <Result />
         </div>
-        <Result />
       </div>
     </div>
   </div>
@@ -55,6 +57,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.customer {
+  margin-top: 500px;
+}
 .calculate {
   h3 {
     font-weight: 500;
