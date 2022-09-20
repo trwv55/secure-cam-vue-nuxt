@@ -3,21 +3,32 @@
     <div class="container">
       <div class="control-wrapper">
         <div class="image">
-          <img src="../static/images/control/phone.png" alt="">
-          </div>
-          <div class="text">
-            <h4>Контроль<br /> на расстоянии</h4>
-            <p>Смотрите прямую трансляцию и записи с видеокамер,<br /> где бы Вы не находились</p>
-          </div>
+          <img src="../static/images/control/phone.png" alt="" />
+        </div>
+        <div class="text">
+          <h4>
+            Контроль<br />
+            на расстоянии
+          </h4>
+          <p>
+            Смотрите прямую трансляцию и записи с видеокамер,<br />
+            где бы Вы не находились
+          </p>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import VideoReg from "./VideoReg.vue";
+
 export default {
-  name: 'Control'
-}
+  name: "Control",
+  // components: {
+  //   VideoReg,
+  // },
+};
 </script>
 
 <style lang="scss" scoped>

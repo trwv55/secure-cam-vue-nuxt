@@ -2,42 +2,56 @@
   <div class="calculate">
     <div class="container">
       <h3>Рассчитайте стоимость видеонаблюдения</h3>
-      <p>Никаких тарифов и абонентских плат - платите один раз и пользуйтесь камерой.</p>
+      <p>
+        Никаких тарифов и абонентских плат - платите один раз и пользуйтесь
+        камерой.
+      </p>
       <div class="form-wrapper">
-<div class="checkbox-form">
-
-  <div class="checkbox-wrapper">
-    <div class="form-check checkbox">
-  <input class="form-check-input input" type="checkbox" value="" id="flexCheckDefault">
-  <label class="form-check-label label" for="flexCheckDefault">
-    Монтаж
-  </label>
-</div>
-<div class="form-check checkbox">
-  <input class="form-check-input input" type="checkbox" value="" id="flexCheckChecked" checked>
-  <label class="form-check-label label" for="flexCheckChecked">
-    Full HD камера
-  </label>
-</div>
-    </div>
-      <Form />
-</div>
-      <Result />
+        <div class="checkbox-form">
+          <div class="checkbox-wrapper">
+            <div class="form-check checkbox">
+              <input
+                class="form-check-input input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label label" for="flexCheckDefault">
+                Монтаж
+              </label>
+            </div>
+            <div class="form-check checkbox">
+              <input
+                class="form-check-input input"
+                type="checkbox"
+                value=""
+                id="flexCheckChecked"
+                checked
+              />
+              <label class="form-check-label label" for="flexCheckChecked">
+                Full HD камера
+              </label>
+            </div>
+          </div>
+          <Form />
+        </div>
+        <Result />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Form from './Form.vue';
-import Result from './Result.vue';
+import Form from "./Form.vue";
+import Result from "./Result.vue";
 
 export default {
-  name: 'Calculate',
+  name: "Calculate",
   components: {
-    Form, Result
-  } 
-}
+    Form,
+    Result,
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -53,7 +67,7 @@ export default {
     line-height: 29px;
     margin-top: 30px;
     margin-bottom: 50px;
-    color: #5082F4;
+    color: #5082f4;
   }
   .form-wrapper {
     display: flex;
@@ -71,7 +85,7 @@ export default {
           .input {
             width: 24px;
             height: 24px;
-            border: 1px solid #AAB0BD;
+            border: 1px solid #aab0bd;
             border-radius: 3px;
             margin-right: 10px;
           }
