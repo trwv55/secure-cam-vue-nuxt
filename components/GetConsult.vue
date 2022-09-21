@@ -2,6 +2,8 @@
   <div class="main">
     <div class="overlay">
       <div class="container consult">
+        <Modal v-if="isModalVisible" />
+
         <div class="links">
           <NuxtLink to="/b2c" class="nuxt-link-active">Для меня</NuxtLink>
           <NuxtLink to="/" id="active">Для бизнеса</NuxtLink>
@@ -15,16 +17,31 @@
         <div class="text">
           <p>Оставьте заявку и получите скидку 15% на первый заказ!</p>
         </div>
-        <button class="button">Получить консультацию</button>
+        <button @click="showModalWindow" class="button">
+          Получить консультацию
+        </button>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import Modal from "./Modal.vue";
 export default {
   name: "GetConsult",
-  components: {},
+  components: { Modal },
+
+  data() {
+    return {
+      isModalVisible: false,
+    };
+  },
+
+  methods: {
+    showModalWindow() {
+      this.isModalVisible = true;
+    },
+  },
 };
 </script>
 
@@ -85,6 +102,7 @@ export default {
         border: none;
         border-radius: 2px;
         margin-top: 55px;
+        cursor: pointer;
       }
     }
   }

@@ -80,20 +80,9 @@ export default {
    }
  }
  .result-btn {
-    width: 325px;
-    height: 60px;
-    margin-left: 50px;
-    margin-bottom: 56px;
-    background: #5082F4;
-    box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.1);
-    border: none;
-    border-radius: 3px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.05px;
-    color: #FFFFFF;
-    cursor: pointer;
+  @include btn-blue;
+   margin-left: 50px;
+   margin-bottom: 56px;
  }
  .footnote {
    position: absolute;

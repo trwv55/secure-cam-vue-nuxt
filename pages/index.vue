@@ -27,6 +27,7 @@ import VideoReg from "../components/VideoReg.vue";
 import FindUs from "../components/FindUs.vue";
 import Footer from "../components/Footer.vue";
 
+
 export default {
   layout: "default",
   name: "IndexPage",
