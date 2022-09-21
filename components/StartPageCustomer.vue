@@ -38,16 +38,31 @@ export default {
   display: flex;
   flex-direction: row;
   margin-bottom: 165px;
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+  }
   .consult-left {
     .links {
       padding-top: 122px;
       padding-bottom: 58px;
+
+      @media screen and (max-width: 500px) {
+        padding-top: 40px;
+      }
       a {
         font-weight: 400;
         font-size: 22px;
         line-height: 105%;
         color: rgba(0, 0, 0, 0.5);
         margin-right: 62px;
+
+        @media screen and (max-width: 500px) {
+          font-size: 18px;
+        }
       }
       #active {
         color: #0b1b28;
@@ -59,6 +74,11 @@ export default {
       font-weight: 600;
       font-size: 50px;
       line-height: 105%;
+
+      @media screen and (max-width: 500px) {
+        font-size: 32px;
+        line-height: 110%;
+      }
     }
     .text > p {
       font-weight: 500;
@@ -66,6 +86,12 @@ export default {
       line-height: 105%;
       margin-top: 56px;
       margin-bottom: 56px;
+
+      @media screen and (max-width: 500px) {
+        font-size: 16px;
+        margin-top: 30px;
+        margin-bottom: 0;
+      }
     }
     .button {
       width: 325px;
@@ -75,10 +101,18 @@ export default {
       color: #fff;
       border: none;
       cursor: pointer;
+      @media screen and (max-width: 500px) {
+        margin-top: 30px;
+        width: 345px;
+        height: 48px;
+      }
     }
   }
   .consult-right {
     margin-top: 103px;
+    @media screen and (max-width: 500px) {
+      margin-top: 30px;
+    }
   }
 }
 </style>
