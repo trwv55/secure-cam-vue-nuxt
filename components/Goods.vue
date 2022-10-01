@@ -6,8 +6,25 @@
         <a class="active" href="#">Внутренние</a>
         <a href="#">Уличные</a>
       </div>
-      <div class="image">
-        <img src="../static/images/goods/offer.png" alt="" />
+
+      <div class="goods__camera">
+        <img class="img-main" src="../static/images/goods/main.png" alt="" />
+        <img
+          class="img-carousel"
+          src="../static/images/goods/main-carousel.png"
+          alt=""
+        />
+        <div class="goods__table">
+          <h4>С6TC (white) IP-видеокамера поворотная</h4>
+          <p class="ezviz">EZVIZ</p>
+          <p class="features">Характеристики</p>
+          <div class="table">
+            <div class="row">
+              <span>Матрица</span>
+              <span>2 MPix</span>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="blocks-wrapper">
@@ -41,7 +58,7 @@ export default {
   name: "Goods",
   data() {
     return {
-      blokGoodsItems: [
+       blokGoodsItems: [
         {
           id: 0,
           icon: "C1C PIR",

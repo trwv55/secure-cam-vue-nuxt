@@ -5,7 +5,6 @@
       <WhyChooseUs />
       <MakeSave />
       <Goods />
-      <Clients />
       <Calculate />
       <Control />
       <VideoReg />
@@ -20,7 +19,6 @@ import GetConsult from "../components/GetConsult.vue";
 import WhyChooseUs from "../components/WhyChooseUs.vue";
 import MakeSave from "../components/MakeSave.vue";
 import Goods from "../components/Goods.vue";
-import Clients from "../components/Clients.vue";
 import Calculate from "../components/calculate/Calculate.vue";
 import Control from "../components/Control.vue";
 import VideoReg from "../components/VideoReg.vue";
@@ -36,7 +34,6 @@ export default {
     WhyChooseUs,
     MakeSave,
     Goods,
-    Clients,
     Calculate,
     Control,
     VideoReg,

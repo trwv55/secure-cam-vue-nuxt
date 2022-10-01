@@ -3,9 +3,34 @@
     <div class="container">
       <h3>Обезопасим каждую сферу вашей жизни</h3>
       <div class="blocks-wrapper">
+         <client-only>
+         <carousel        
+          class="blocks" 
+          v-bind="options">
+          <slide 
+            v-for="item in blokItems" 
+            :key="item.id" 
+            class="block">
+             <img
+              :src="require(`../static/images/makeSave/${item.icon}.svg`)"
+              alt=""
+            />
+            <span>{{ item.title }}</span>
+           </slide>
+     
+         </carousel>
+          </client-only>
+     </div>
+
+
+
+
+      
+      <!-- <div class="blocks-wrapper">
         <div class="arrow arrow-left">
           <img src="../static/images/makeSave/arrow-left.svg" alt="" />
         </div>
+
         <div class="blocks" v-for="item in blokItems" :key="item.id">
           <div class="block">
             <img
@@ -14,18 +39,21 @@
             />
             <span>{{ item.title }}</span>
           </div>
-        </div>
-        <div class="arrow arrow-right">
+        </div> -->
+
+        <!-- <div class="arrow arrow-right">
           <img src="../static/images/makeSave/arrow-right.svg" alt="" />
-        </div>
+        </div> -->
+
       </div>
     </div>
-  </div>
+
 </template>
 
 <script>
 export default {
   name: "MakeSave",
+  components: {  },
   data() {
     return {
       blokItems: [
@@ -34,8 +62,18 @@ export default {
         { id: 2, icon: "parking", title: "Автостоянки" },
         { id: 3, icon: "storage", title: "Склады" },
       ],
-    };
-  },
+      options: {
+        loop: true,
+        perPage: 3,
+        paginationEnabled: false,
+        arrows: true,
+        navigationEnabled: true,
+        navigationNextLabel: "<button class='rightnav'><keyboard_arrow_right></button>"
+      }
+     
+    }
+  }
+
 };
 </script>
 
@@ -53,9 +91,9 @@ export default {
     }
   }
   .blocks-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-between;
     margin-top: 55px;
     padding-bottom: 80px;
 
@@ -69,9 +107,9 @@ export default {
     .block {
       border: 2px solid rgba(229, 229, 229, 0.5);
       border-radius: 2px;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
+      // display: flex;
+      // flex-direction: row;
+      // justify-content: center;
       cursor: pointer;
 
       @media screen and (max-width: 500px) {
